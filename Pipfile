@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+
+[packages]
+pandas = "==0.25.1"
+numpy = "*"
+sklearn = "*"
+lxml = "*"
+cairosvg = "*"
+tinycss = "*"
+cssselect = "*"
+pygame = "==2.0.0.dev6"
+recordclass = "*"
+argparse = "*"
+enlighten = "*"
+setuptools = "*"
+pyinstaller = {file = "https://github.com/pyinstaller/pyinstaller/archive/develop.zip"}
+
+[requires]
+python_version = "3.8"

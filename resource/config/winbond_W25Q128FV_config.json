@@ -1,0 +1,48 @@
+{
+    "Meta": 
+    {
+        "Company"                   : "Winbond",
+        "Model"                     : "W25Q128FV",
+        "Size(MB)"                  : "128",
+        "DefaultAddressByteSize"    : "3",
+        "Frequency(MHz)"            : "1",
+        "ClockWidth"                : "8"
+    },
+
+    "OpCodes":
+    {
+        "General":
+        {
+            "WriteEnable"   : "0x06",
+            "WriteDisable"  : "0x04"
+        },
+
+        "MultiCodes":
+        {
+            "ChipErase"     : ["0xC7", "0x60"]
+        },
+
+        "3Bytes":
+        {
+            "Read"          : "0x03",
+            "FastRead"      : "0x0B",
+            "PageProgram"   : "0x02",
+            "SectorErase"   : "0x20",
+            "BlockErase(32)": "0x52",
+            "BlockErase(64)": "0xD8"
+
+        },
+
+        "4Bytes":
+        {
+            "Enter"         : "0xB7",
+            "Exit"          : "0xE9",
+            "Read"          : "0x13",
+            "FastRead"      : "0x0C",
+            "PageProgram"   : "0x12",
+            "SectorErase"   : "0x21",
+            "BlockErase(64)": "0xDC"
+
+        }
+    }
+}

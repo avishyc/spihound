@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "/Users/avishyc/.local/share/virtualenvs/spihound-J9D_rf7q/bin/python",
+    "files.associations": {
+        "__hash_table": "c",
+        "__split_buffer": "c",
+        "array": "c",
+        "bitset": "c",
+        "initializer_list": "c",
+        "iterator": "c",
+        "string": "c",
+        "string_view": "c",
+        "unordered_map": "c",
+        "utility": "c",
+        "vector": "c",
+        "__locale": "c"
+    }
+}
