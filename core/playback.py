@@ -24,7 +24,7 @@ C_WRITE = C_LGREEN
 ###############################################################################
 # Placement Constants
 INIT_W = 1200
-INIT_H = 1000
+INIT_H = 800
 MARGIN_X = 0.01
 MARGIN_Y = 0.01
 WALL_H = 1 - 2*MARGIN_Y

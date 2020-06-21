@@ -155,15 +155,15 @@ def deep_analysis(df: DataFrame, bsize: int, iblocks: list):
             print('\n\t--[ADDRESS {addr}]-------------------------'.format(addr=hex(e.Address)))
 
             print('\n\t(READS)')
+            print('\n\t\t{time: <20}{val:<10}'.format(time=" TIME", val=" VALUE"))
+            print('\t\t{time: <20}{val:<10}'.format(time='-'*6, val='-'*7))
             for t, v in e.Reads:
-                print('\n\t\t{time: <20}{val:<10}'.format(time=" TIME", val=" VALUE"))
-                print('\t\t{time: <20}{val:<10}'.format(time='-'*6, val='-'*7))
                 print('\t\t{time: <20}{val:<10}'.format(time=t, val=v))
 
             print('\n\t(WRITES)')
+            print('\n\t\t{time: <20}{val:<10}'.format(time=" TIME", val=" VALUE"))
+            print('\t\t{time: <20}{val:<10}'.format(time='-'*6, val='-'*7))
             for t, v in e.Writes:
-                print('\n\t\t{time: <20}{val:<10}'.format(time=" TIME", val=" VALUE"))
-                print('\t\t{time: <20}{val:<10}'.format(time='-'*6, val='-'*7))
                 print('\t\t{time: <20}{val:<10}'.format(time=t, val=v))
     return
 
