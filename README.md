@@ -26,7 +26,6 @@ The tool features a hardware infrastructure in conjunction with a CLI software w
 * [Credits](#credits)
 
 ## Installation
----
 
 ```console
 $ git clone https://github.com/avishyc/spihound.git
@@ -42,7 +41,6 @@ Most of the SPI Hound's features may be used with no preparations, except for th
 The sniffer relies on the hardware of the tool and requires a setup, see the [Firmware](#firmware) section for the instructions.
 
 ## Build
----
 If you'd like to modify the source code you'll need to rebuild it.
 This section will describe how to do so, step-by-step, from the bottom up.
 
@@ -100,7 +98,6 @@ Otherwise, the next section is for you.
 
 
 ## Firmware
----
 For the the hardware part, SPI Hound makes use of <a href="http://dangerousprototypes.com/docs/Bus_Pirate" target="_blank">**Bus Pirate v4**</a>, a hackers tool which provides a universal bus interface that talks to most chips.
 <center><img src="./resource/img/BPv4c.jpg" title="BPv4" alt="BPv4"></center>
 
@@ -188,7 +185,6 @@ With `pirate-loader` and the hex file we are ready to load our device.
 
 
 ## Usage
----
 Once everything is built, loaded and ready to run, we can finally use the tool.
 This Section will explain each feature of the tool, and how to use it.
 
@@ -427,16 +423,14 @@ Trail of address 0x0 in timeframe [20, 51.97600000000404]
 These are the values byte 0x00000000 had from the 20th msec to the end of the session.
 
 ## Team
----
 | <a href="https://www.linkedin.com/in/jonathan-lusky-b8b634130/" target="_blank">**Jonathan Lusky**</a>| <a href="https://www.linkedin.com/in/asaf-rubinfeld/" target="_blank">**Asaf Rubinfeld**</a> | <a href="https://www.linkedin.com/in/avishay-cohen-06a1a114a/" target="_blank">**Avishay Cohen**</a> |
 | :---: |:---:| :---:|
 | <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGWQQYdwPCSg/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=RxFUEFw5fpvog8BX8UkiFPu9VA6uZcep-uzfHBUQ49g" width="200" height="200">    | <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFFNxJAH0nlBA/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=_6Y6K8yR0j7nKvE7vbDnLAlJ5oeY7q5zPtNOVXv6cZQ" width="200" height="200"> | <img src="https://media-exp1.licdn.com/dms/image/C5603AQHB2w57CPCFBw/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=GNc5yIGsxJsxxyEnQjhbLVTC7pOxiuWwkJs4CqdDNKo&s=200" width="200" height="200"> |
 | Security Researcher | Developer | Developer|
 
 ## FAQ
----
 - **What?**
     - Yes.
+
 ## Credits
----
 <a href="http://dangerousprototypes.com/blog/bus-pirate-manual/" target="_blank">**Dangerous Prototypes - Open source hardware projects**</a>
