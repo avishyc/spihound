@@ -181,7 +181,7 @@ With `pirate-loader` and the hex file we are ready to load our device.
     Writing page 170 row 1362, 2a900...(SKIPPED by bootloader)...OK
     ```
 
-> **Before we can use our fresh device we must enforce a reset by disconnecting it from out PC**.
+> **Before we can use our fresh device we must enforce a reset by disconnecting it from the PC**.
 
 
 ## Usage
