@@ -1,6 +1,7 @@
 <center><img src="./resource/img/spihound.png" title="spihound" alt="spihound"></center>
 
 # <center>SPI HOUND</center>
+![LastCommit](https://img.shields.io/github/last-commit/avishyc/spihound)
 ![Python Version](https://img.shields.io/github/pipenv/locked/python-version/avishyc/spihound) 
 ![Issues](https://img.shields.io/github/issues/avishyc/spihound)
 ![Languages](https://img.shields.io/github/languages/count/avishyc/spihound)
@@ -48,17 +49,17 @@ This section will describe how to do so, step-by-step, from the bottom up.
 Most of the source code for the software side of the tool is written in python, using multi-platform packages. Dealing with version conflicts of python packages and python itself could be a nightmare, so to overcome this issue we're using the wonerful tools <a href="https://github.com/pyenv/pyenv" target="_blank">**Pyenv**</a> and <a href="https://github.com/pypa/pipenv" target="_blank">**Pipenv**</a>.
 
 1. Install `pyenv` using the instructions found at <a href="https://github.com/pyenv/pyenv" target="_blank">**Pyenv**</a>.
-2. Install `pipenv` using the instructions found at <a href="https://github.com/pypa/pipenv" target="_blank">**Pipenv**</a>.
-3. Make sure you have the version specified at [.python-version](./.python-version) installed via
-```console
-$ pyenv install `cat spihound/.python_version`
-```
+2. Build the environment's python version specified at [.python-version](./.python-version) installed via
+    ```console
+    $ cd spihound
+    $ pyenv install
+    ```
+3. Install `pipenv` using the instructions found at <a href="https://github.com/pypa/pipenv" target="_blank">**Pipenv**</a>.
 4. Install all the required packages via
-```console
-$ cd spihound
-$ pipenv install
-```
-This will use the [Pipfile](./Pipfile) to install all the necessary packges with the right version.
+    ```console
+    $ pipenv install
+    ```
+    This will use the [Pipfile](./Pipfile) to install all the necessary packges with the right version.
 
 Now that the environment is all setup, we can proceed to the actual build.
 
@@ -88,12 +89,18 @@ The last part of the software build.
 We're going to use `pyinstaller` to compile the whole project into an executable.
 To do so, all you need to do is run
 ```console
-$ pyinstaller --onedir spihound/core/spihound.py
+$ pipenv run pyinstaller --onedir spihound/core/spihound.py
 ```
 This will compile the project and create a folder `dist/spihound` with the executable.
 Techincally, you may want to try running the command above with the flag `--onefile` for a single exe without the hassle of the entire directory, but at the time of writting these instructions, pyinstaller has issues with some of the platforms, so we recommend using `--onedir` instead.
 
-If you have the hardware setup with the tool's firmware, you go ahead and check out the [Usage](#usage) section.
+If you did choose to build with `--onedir`, you must do the next step:
+```console
+$ cp -r spihound/lib/* spihound/dist/YOUR_OS/spihound/lib
+```
+Change `YOUR_OS` to either linux, macos or windows.
+
+If you have the hardware setup with the tool's firmware, you can go ahead and check out the [Usage](#usage) section.
 Otherwise, the next section is for you.
 
 
