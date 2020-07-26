@@ -48,7 +48,7 @@ This section will describe how to do so, step-by-step, from the bottom up.
 ### Environment
 Most of the source code for the software side of the tool is written in python, using multi-platform packages. Dealing with version conflicts of python packages and python itself could be a nightmare, so to overcome this issue we're using the wonerful tools <a href="https://github.com/pyenv/pyenv" target="_blank">**Pyenv**</a> and <a href="https://github.com/pypa/pipenv" target="_blank">**Pipenv**</a>.
 
-1. Install `pyenv` using the instructions found at <a href="https://github.com/pyenv/pyenv" target="_blank">**Pyenv**</a>.
+1. Install `pyenv` using the instructions found at <a href="https://github.com/pyenv/pyenv" target="_blank">**Pyenv**</a> (Use <a href="https://github.com/pyenv-win/pyenv-win" target="_blank">**Pyenv-win**</a> for Windows).
 2. Build the environment's python version specified at [.python-version](./.python-version) installed via
     ```console
     $ cd spihound
@@ -99,6 +99,8 @@ If you did choose to build with `--onedir`, you must do the next step:
 $ cp -r spihound/lib/* spihound/dist/YOUR_OS/spihound/lib
 ```
 Change `YOUR_OS` to either linux, macos or windows.
+
+Otherwise, add `spihound/sniffer/` to your PATH.
 
 If you have the hardware setup with the tool's firmware, you can go ahead and check out the [Usage](#usage) section.
 Otherwise, the next section is for you.
