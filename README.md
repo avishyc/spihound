@@ -9,6 +9,10 @@
 ![Size](https://img.shields.io/github/languages/code-size/avishyc/spihound)
 ![Contributor](https://img.shields.io/github/contributors/avishyc/spihound)
 
+
+![Watchers](https://img.shields.io/github/watchers/avishyc/spihound?style=social)
+![Stars](https://img.shields.io/github/stars/avishyc/spihound?style=social)
+
 SPI Hound is a multi-platform SPI flash vulnerabilities research tool.
 The tool features a hardware infrastructure in conjunction with a CLI software which provides security researchers with abilities to monitor and analyze threats related to SPI flash.
 - Sniff data communication between Master-Slave components.
@@ -435,7 +439,7 @@ These are the values byte 0x00000000 had from the 20th msec to the end of the se
 | <a href="https://www.linkedin.com/in/jonathan-lusky-b8b634130/" target="_blank">**Jonathan Lusky**</a>| <a href="https://www.linkedin.com/in/asaf-rubinfeld/" target="_blank">**Asaf Rubinfeld**</a> | <a href="https://www.linkedin.com/in/avishay-cohen-06a1a114a/" target="_blank">**Avishay Cohen**</a> |
 | :---: |:---:| :---:|
 | <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGWQQYdwPCSg/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=RxFUEFw5fpvog8BX8UkiFPu9VA6uZcep-uzfHBUQ49g" width="200" height="200">    | <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFFNxJAH0nlBA/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=_6Y6K8yR0j7nKvE7vbDnLAlJ5oeY7q5zPtNOVXv6cZQ" width="200" height="200"> | <img src="https://media-exp1.licdn.com/dms/image/C5603AQHB2w57CPCFBw/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=GNc5yIGsxJsxxyEnQjhbLVTC7pOxiuWwkJs4CqdDNKo&s=200" width="200" height="200"> |
-| Security Researcher | Developer | Developer|
+| Security Researcher | Security Researcher | Developer|
 
 ## FAQ
 - **What?**
